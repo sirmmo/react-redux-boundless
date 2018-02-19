@@ -192,6 +192,24 @@ export default class Presentation extends React.Component {
 
                     ]} />
 
+
+                <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+                    <Heading size={6} textColor="secondary" caps>Bello ma abbiamo un solo layer...</Heading>
+                    <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+                        Aggiungiamo i layer dei terremoti di USGS da qui:<br />
+                        <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php">https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php</a>
+                    </Text>
+                </Slide>
+
+                <CodeSlide transition={["fade"]} bgColor="secondary"
+                    lang="js"
+                    code={require("raw-loader!../assets/step3.example")}
+                    ranges={[
+                        { loc: [0, 270], title: "Aggiungiamo un layer geojson" },
+                        { loc: [52, 56], note: "Aggiungiamo i dati" },
+                        { loc: [57, 67], note: "Aggiungiamo il layer" },
+                        
+                    ]} />
             </Deck>
         );
     }
