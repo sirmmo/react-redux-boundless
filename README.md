@@ -1,5 +1,7 @@
 # Spectacle Boilerplate
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sirmmo/react-redux-boundless.svg)](https://greenkeeper.io/)
+
 ## Contents
 
 - [Reference](#reference)
